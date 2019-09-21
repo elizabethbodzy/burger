@@ -20,9 +20,9 @@ var orm = {
                 cb(result);
             });
         },
-        updateOne: function(tableInput, updateColumnName, updateRowVal, searchColumnName, searchRowVal, cb) {
-            var queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
-            connection.query(queryString, [tableInput, updateColumnName, updateRowVal, searchColumnName, searchRowVal], function(err, result) {
+        updateOne: function(tableInput, updateColumnName, updateValue, id, cb) {
+            var queryString = "UPDATE ?? SET ?? = ? WHERE id = ?";
+            connection.query(queryString, [tableInput, updateColumnName, updateValue, id, ], function(err, result) {
                 if (err) {
                     throw err;
                 }

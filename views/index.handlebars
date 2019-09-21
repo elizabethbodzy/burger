@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-		<title>Eat Da Burger!</title>
-		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	</head>
-	<body>
-        <img class="burger" src="assets/images/burger.png">
-		<h1>Eat Da Burger!</h1>
-	<form action = "/" method="POST">
-		<input id="burger-input" type="text">
-		<input type="submit" value="Submit">
-        <p class="submit-text"> Enter a burger you want to eat and then click the Submit button.</p>
-	</form>
+    <meta charset="UTF-8">
+    <title>Eat Da Burger!</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
 
-<div id="burgers-available">
-    <div class="row">
-        <div class="col-sm-6">
-            <h3> Burgers Available to Eat </h3>
-            {{#each burgers}}
-                {{#unless this.devoured}}
-                <div class="available-burger">
-                    <form class="devour-burger" action="/{{id}}?_method=PUT" method="POST">
-                        <button class="devour-button"> DEVOUR IT</button>
-                    </form>
-                     #{{id}} <span> {{burger_name}}</span>
-                </div>
-                {{/unless}}
-                {{/each}}
-        </div>
-
-        <div id="burgers-devoured">
-            <h3> Yummy Burgers </h3>
-            {{#each burgers}}
-            {{#if this.devoured}}
-            <div class="burger">#{{id}}<span>{{burger_name}}</span></div>
-            {{/if}}
+<body>
+    <img class="burger" src="assets/images/burger.png">
+    <h1>Eat Da Burger!</h1>
+    
+    <div id="burgers-available">
+        <div class="uneaten">
+           
+                
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{>burger-list eaten=false}}
+                {{!-- <form class="devoured-burger" action="/{{id}}?_method=PUT" method="POST">
+                    <button class="devour-button">DEVOUR IT</button>
+                </form> --}}
+                    
+            {{/unless}}
             {{/each}}
-            
         </div>
-    </div>
-</div>    
-	</body>
+
+        <div class="eaten">
+                <h3> Yummy Burgers </h3>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{>burger-list eaten=false}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+        </div>
+        
+
+        {{!-- <form action="/" method="POST"> --}}
+        <textarea name="burger" id="burger"></textarea>
+        <button type="submit" id="submitBurger">Submit</button>
+        <p class="submit-text"> Enter a burger you want to eat and then click the Submit button.</p>
+   </div>
+    
+</body>
+
 </html>
