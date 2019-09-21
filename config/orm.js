@@ -2,6 +2,7 @@ var connection = require("./connection.js");
 
 var orm = {
         selectAll: function(tableInput, cb) {
+              // The last variable cb represents the anonymous function being passed from server.js
             var queryString = "SELECT * from ??";
             connection.query(queryString, [tableInput], function(err, result) {
                 if (err) {

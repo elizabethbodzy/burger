@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<title>Eat Da Burger!</title>
+		<link rel="stylesheet" href="assets/style.css" type="text/css">
+	</head>
+	<body>
+        <img class="burger" src="images/burger.png">
+		<h1>Eat Da Burger!</h1>
+	<form>
+		<input id="burger-input" type="text">
+		<input type="submit" value="Submit">
+	</form>
+    <!-- <div id="burgers"></div> -->
+    
+    <div class="row">
+        <div class="col-lg-6">
+            <ul> 
+                <!-- display burgers -->
+                <p><span class="label">ID:</span>{{this.id}}</p>
+                <p><span class="label">Burger:</span>{{this.burger_name}}</p>
+                <button class="eatburger" data-id="{{this.id}}" data-newDevoured="{{devour}}"> Eat the burger! </button>
+            </ul>
+        </div>
+
+        <div class="col-lg-6">
+            
+        </div>
+    </div>
+	</body>
+</html>

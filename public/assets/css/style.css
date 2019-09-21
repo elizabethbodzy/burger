@@ -1,0 +1,37 @@
+* {
+    background-color: #fcca80;
+}
+/* body {
+	
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	background: #eee;
+} */
+
+.burger {
+    width: 10%;
+    margin-left: 570px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+
+
+#burgers-available {
+    margin-left: 100px;
+}
+
+#burgers-devoured{
+    margin-left: 600px;
+    margin-top: -210px;
+}
+
+.devour-button{
+    margin-left: -500px;
+}
