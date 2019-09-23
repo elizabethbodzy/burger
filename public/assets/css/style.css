@@ -1,12 +1,11 @@
-* {
-    background-color: #fcca80;
-}
-/* body {
-	
-	font-family: Helvetica, Arial, sans-serif;
+
+body {
+     background-image: url(../images/chalkboard.jpg);
+     
+	/* font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
-	background: #eee;
-} */
+	background: #eee; */
+}
 
 .burger {
     width: 10%;
@@ -15,23 +14,58 @@
 
 h1 {
     text-align: center;
-}
-
-form {
-    text-align: center;
+    color: white;
+    font-family: 'Give You Glory', cursive;
 }
 
 
 
 #burgers-available {
-    margin-left: 100px;
+
+    margin-left: 150px;
+    font-family: 'Give You Glory', cursive;
+    color: white;
+    font-size: 20px;
 }
 
-#burgers-devoured{
-    margin-left: 600px;
-    margin-top: -210px;
-}
 
 .devour-button{
     margin-left: -500px;
 }
+
+.eaten {
+    float: right;
+    margin-right: 200px;
+    margin-top: -300px;
+    margin-bottom: 10px;
+    font-family: 'Give You Glory', cursive;
+}
+
+#burger {
+    margin-left: 100px;
+}
+
+.submit {
+    margin-top: 150px;
+    margin-left: 450px;
+    color: white;
+    font-family: 'Give You Glory', cursive;
+}
+
+.submit-text{
+    margin-left: -50px;
+}
+
+.available {
+    font-size: 30px;
+}
+
+.yummy {
+    font-size: 30px;
+}
+
+.devour {
+    margin-left: 250px;
+}
+
+
