@@ -36,7 +36,7 @@ h1 {
 .eaten {
     float: right;
     margin-right: 200px;
-    margin-top: -300px;
+    margin-top: -200px;
     margin-bottom: 10px;
     font-family: 'Give You Glory', cursive;
 }
@@ -46,7 +46,7 @@ h1 {
 }
 
 .submit {
-    margin-top: 150px;
+    margin-top: 120px;
     margin-left: 450px;
     color: white;
     font-family: 'Give You Glory', cursive;
