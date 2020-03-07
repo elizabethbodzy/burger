@@ -5,8 +5,8 @@ Eat Da Burger app creates a burger logger utlizing MySQL, Node, Express, Handleb
 
 # Screenshots/Live Recording
 
-![](/assets/images/burger-home.png)
-![](/assets/images/burger.gif)
+![](/public/assets/images/burger-home.png)
+![](/public/assets/images/burger.gif)
 
 
 # Built With
