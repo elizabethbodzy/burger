@@ -1,15 +1,24 @@
 # Eat Da Burger
 
-<h4> Eat Da Burger app creates a burger logger utlizing MySQL, Node, Express, Handlebars and ORM. Have fun and add burgers and devour them! </h4>
+# Description 
+Eat Da Burger app creates a burger logger utlizing MySQL, Node, Express, Handlebars and ORM. Have fun and add burgers and devour them! The main purpose of the application is to take in the input specified for the type of burger and display them in the Delicious Available Burgers list. If the user decides they would like to eat a particular burger, they can click on the Devour It button and the burger will now be placed in the Yummy Eaten Burgers list.
 
-<ul> 
+# Screenshots/Live Recording
 
-<li> The main purpose of the application is to take in the input specified for the type of burger and display them in the Delicious Available Burgers list. If the user decides they would like to eat a particular burger, they can click on the Devour It button and the burger will now be placed in the Yummy Eaten Burgers list. </li> </ul> <br>
+![](/assets/images/burger-home.png)
+![](/assets/images/burger.gif)
 
 
-<img src="1.png">
+# Built With
+* MySQL
+* Node
+* Express
+* Handlebars
+* ORM
 
-<a href="https://shielded-harbor-70217.herokuapp.com/"> Heroku App Link </a>
+# Demo Link
+
+https://shielded-harbor-70217.herokuapp.com/
 
 <br>
 
